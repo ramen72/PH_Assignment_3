@@ -163,7 +163,6 @@ Retrieve the top 2 most expensive matches while skipping the highest-priced matc
 ## Technologies Used
 
 - PostgreSQL
-- SQL
 
 ---
 
@@ -186,6 +185,4 @@ Through this assignment, the following database concepts were practiced:
 
 ## Author
 
-Assignment 3 – Football Ticket Booking System
-
-Prepared as part of PostgreSQL Database Practice and SQL Query Development.
+Name : Ramen Biswas.
