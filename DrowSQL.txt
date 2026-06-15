@@ -1,1 +1,3 @@
-https://drawsql.app/teams/drawsql-pu/diagrams/football-ticket-booking-system
+ERD Link (Public): https://drawsql.app/teams/drawsql-pu/diagrams/football-ticket-booking-system
+GitHub Repository Link (Public): https://github.com/ramen72/PH_Assignment_3.git
+Interview Video Link (Public): https://drive.google.com/drive/folders/1nMgIHBL2Y7YJmL6wgCaQHgjZ4EI-WaHt?usp=sharing
