@@ -155,7 +155,7 @@ from
   users
 where
   full_name ilike 'tanvir%'
-  or full_name ilike '%Haque%'
+  or full_name ilike '%Haque%';
 
   
   -- Query 3: Retrieve all booking records where the payment status is missing (NULL), replacing the empty result with 'Action Required'.
@@ -169,13 +169,6 @@ from
 where
   payment_status is null;
 
-select
-  coalesce(payment_status, 'tstt')
-from
-  bookings
-where
-  payment_status is null
-
   
   -- Query 4: Retrieve match booking details along with the User's full name and the scheduled Match fixture teams.
 select
@@ -186,7 +179,7 @@ select
 from
   bookings
   inner join users on bookings.user_id = users.user_id
-  inner join matches on bookings.match_id = matches.match_id
+  inner join matches on bookings.match_id = matches.match_id;
 
   
   -- Query 5: Display a comprehensive list of all users and their booking IDs, ensuring that fans who have never bought a ticket are still listed.
@@ -196,7 +189,7 @@ select
   booking_id
 from
   users
-  left join bookings on users.user_id = bookings.user_id
+  left join bookings on users.user_id = bookings.user_id;
 
   
   -- Query 6: Find all ticket bookings where the total cost is strictly higher than the average cost of all ticket bookings.
@@ -212,12 +205,12 @@ where
       avg(total_cost)
     from
       bookings
-  )
+  );
   
   
   -- Query 7: Retrieve the top 2 most expensive matches sorted by base ticket price, skipping the absolute highest premium match.
 select
-  *
+  match_id,fixture,base_ticket_price
 from
   matches
 order by
@@ -225,6 +218,6 @@ order by
 offset
   1
 limit
-  2
+  2;
 
   -- select * from matches where match_status != 'Postponed' order by base_ticket_price desc offset 1 limit 2
