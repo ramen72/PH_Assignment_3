@@ -1,4 +1,3 @@
-/* 
 create database FTB_System;
 
 -- Create User Table
@@ -229,4 +228,3 @@ limit
   2
 
   -- select * from matches where match_status != 'Postponed' order by base_ticket_price desc offset 1 limit 2
-*/
